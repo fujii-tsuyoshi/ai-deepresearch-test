@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- タイトルを変数化 -->
+    <title>AI & Data Science Pulse: March 25-26, 2025</title>
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        min-height: 100vh;
+      }
+
+      a {
+        color: #005593;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      /* Layout */
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      /* Header */
+      header {
+        background-color: #005593;
+        color: white;
+        padding: 2rem 1rem;
+      }
+
+      header .container h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      header .container p {
+        color: #cce5ff;
+        letter-spacing: 0.3px;
+      }
+
+      /* Main content */
+      main {
+        padding: 2rem 1rem;
+      }
+
+      /* Sections */
+      .section {
+        margin-bottom: 2.5rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .section-header {
+        background-color: rgba(0, 85, 147, 0.1);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .section-header h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #005593;
+        letter-spacing: 0.3px;
+      }
+
+      .section-content {
+        padding: 1.5rem;
+      }
+
+      /* Items */
+      .item {
+        border-left: 4px solid #005593;
+        padding-left: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .item-title {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .item-title strong {
+        color: #005593;
+      }
+
+      .item p {
+        margin-top: 0.25rem;
+        color: #4b5563;
+      }
+
+      /* External link icon */
+      .external-link {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        position: relative;
+        top: 1px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #005593;
+        color: white;
+        padding: 1.5rem 1rem;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (min-width: 768px) {
+        header .container h1 {
+          font-size: 1.875rem;
+        }
+      }
+
+      /* Chevron icons */
+      .chevron {
+        border: solid #005593;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.2s;
+      }
+
+      .chevron-down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      .chevron-up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- タイトルを変数化 -->
+        <h1>AI & Data Science Pulse: March 25-26, 2025</h1>
+        <p>
+          Tracking the latest innovations and breakthroughs across the AI
+          landscape
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Section 1: GitHub Trending -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('github')">
+            <h2>1. GitHub Trending</h2>
+            <span class="chevron chevron-up" id="github-chevron"></span>
+          </div>
+          <div class="section-content" id="github-content">
+            <ul id="github-items">
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/hacksider/Deep-Live-Cam">
+                      hacksider/Deep-Live-Cam
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  単一画像だけでリアルタイム顔交換やディープフェイク生成を行うオープンソースツール。SNSで話題となり急激にスター数が伸びています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">
+                      Shubhamsaboo/awesome-llm-apps
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  OpenAIやAnthropicなど、多数のLLMを活用したAIアプリケーションの事例を集めたリポジトリ。最新のLLM活用ノウハウの共有が人気を集めています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/joanrod/star-vector">
+                      joanrod/star-vector
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  SVG画像生成用ファウンデーションモデル「StarVector」を公開。テキスト・視覚両方を入力としてベクトル画像を生成する先進的な試みが注目を集めています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/ocrmypdf/OCRmyPDF">
+                      ocrmypdf/OCRmyPDF
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  スキャンされたPDFにOCR結果を埋め込み、テキスト検索可能にするPythonツール。最新アップデートを機に再び注目を集めています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/browser-use/browser-use">
+                      browser-use/browser-use
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  AIエージェントがウェブ上のタスクを実行・制御するためのブラウザ操作ツールキット。自律エージェント開発ブームの中で急速に関心を集めています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/agno-agi/agno">
+                      agno-agi/agno
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  マルチモーダルAIエージェント構築ライブラリ。LLMにメモリや知識、ツール使用などを付与し、拡張性の高いエージェント開発を実現しています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 2: Blog (Zenn/Qiita/note) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('articles')">
+            <h2>2. Blog (Zenn/Qiita/note)</h2>
+            <span class="chevron chevron-up" id="articles-chevron"></span>
+          </div>
+          <div class="section-content" id="articles-content">
+            <ul id="blog-items">
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://zenn.dev/mixi/articles/b8a60701c63d1f">
+                      Camel-AIのOWLを試してみた
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Camel-AIフレームワーク上に構築されたマルチエージェントシステム「OWL」の紹介記事。ウェブ検索やブラウザ操作、ドキュメント解析など多彩な機能が備わっており注目されています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://qiita.com/RepKuririn/items/eb11825ffe940afa760b"
+                    >
+                      Gemini 2.5: Googleの最も知的なAIモデルの登場
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Google DeepMindがリリースした大規模AIモデル「Gemini
+                  2.5」の特徴を解説。テキスト・画像・音声・コードなど複数モーダルを単一モデルで処理し、より高度な推論能力を実現した点に注目が集まっています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://qiita.com/GOROman/items/a27ef7f3004de6ed18bb"
+                    >
+                      自分をAIでもう一人作る？？Second-Meを試してみる (シリーズ)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  個人の記憶や価値観を学習したAIアシスタント「Second-Me」を構築する連載。プライバシー保護と高い適応性を両立させた技術的取り組みが話題になっています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://note.com/maruking777/n/naa6053629536">
+                      最新の生成AIツール＆神ニュースまとめ【2025年3月25日】
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  「AI王子」氏による生成AI関連ニュースまとめ。GoogleのGeminiアップデート、OpenAIの音声モデル発表、Stable
+                  Virtual
+                  Cameraの2D→3D動画変換など多岐にわたるトピックを網羅しています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 3: Paper (arXiv) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('papers')">
+            <h2>3. Paper (arXiv)</h2>
+            <span class="chevron chevron-up" id="papers-chevron"></span>
+          </div>
+          <div class="section-content" id="papers-content">
+            <ul id="paper-items">
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.18938">
+                      AdaWorld: Learning Adaptable World Models with Latent
+                      Actions
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  潜在的な行動を学習に組み込んだ自律エージェント向け世界モデル研究。少ない行動ラベルデータでも新規環境への適応を可能にする手法を提案しています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.17378">
+                      Large language model-powered AI systems achieve
+                      self-replication with no human intervention
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  LLMベースのAIシステムによる「自己複製」リスクを示す論文。32のシステムのうち11が人間の介在なしに自己複製を成功しうる可能性があると警鐘を鳴らしています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.17604">
+                      OmniScience: A Domain-Specialized LLM for Scientific
+                      Reasoning and Discovery
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  科学分野に特化した大規模言語モデルの研究。ドメイン適応と知識蒸留により、分野特化の高度な推論を可能にし、ベンチマークで高い性能を示しています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 4: Industry Spotlight -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('companies')">
+            <h2>4. Industry Spotlight</h2>
+            <span class="chevron chevron-up" id="companies-chevron"></span>
+          </div>
+          <div class="section-content" id="companies-content">
+            <ul id="company-items">
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>OpenAI:</strong>
+                </div>
+                <p>
+                  GPT-4の拡張モデル「GPT-4<em>o</em>」に画像生成機能を統合したと発表。ChatGPTから直接フォトリアリスティックな画像生成が可能になり、テキストと画像をシームレスに扱えます。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+
+              <!-- 項目開始 -->
+              <li class="item">
+                <div class="item-title">
+                  <strong>Google (DeepMind):</strong>
+                </div>
+                <p>
+                  大規模AIモデル「Gemini
+                  2.5」をリリース。前バージョンから推論力・コード生成性能を大幅に強化し、より高度な問題解決や強力なAIエージェントの構築を目指すとしています。
+                </p>
+              </li>
+              <!-- 項目終了 -->
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <!-- フッターの日付を変数化 -->
+        <p>© 2025 AI & Data Science Pulse | Last Updated: March 26, 2025</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for toggling sections -->
+    <script>
+      // Initialize all sections as expanded
+      const sections = ["github", "articles", "papers", "companies"];
+      const sectionStates = {
+        github: true,
+        articles: true,
+        papers: true,
+        companies: true,
+      };
+
+      // Function to toggle section visibility
+      function toggleSection(sectionId) {
+        const content = document.getElementById(`${sectionId}-content`);
+        const chevron = document.getElementById(`${sectionId}-chevron`);
+
+        sectionStates[sectionId] = !sectionStates[sectionId];
+
+        if (sectionStates[sectionId]) {
+          content.style.display = "block";
+          chevron.className = "chevron chevron-up";
+        } else {
+          content.style.display = "none";
+          chevron.className = "chevron chevron-down";
+        }
+      }
+    </script>
+  </body>
+</html>
