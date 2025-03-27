@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- タイトルを変数化 -->
+  <title>AI & Data Science Pulse: [START_DATE] - [END_DATE]</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "Yu Gothic", "MS PGothic", sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      min-height: 100vh;
+    }
+    
+    a {
+      color: #005593;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+    
+    /* Layout */
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Header */
+    header {
+      background-color: #005593;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    
+    header .container h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+    
+    header .container p {
+      color: #cce5ff;
+      letter-spacing: 0.3px;
+    }
+    
+    /* Main content */
+    main {
+      padding: 2rem 1rem;
+    }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 2.5rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .section-header {
+      background-color: rgba(0, 85, 147, 0.1);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .section-header h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #005593;
+      letter-spacing: 0.3px;
+    }
+    
+    .section-content {
+      padding: 1.5rem;
+    }
+    
+    /* Items */
+    .item {
+      border-left: 4px solid #005593;
+      padding-left: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+    }
+    
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .item-title {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .item-title strong {
+      color: #005593;
+    }
+    
+    .item p {
+      margin-top: 0.25rem;
+      color: #4b5563;
+    }
+    
+    /* External link icon */
+    .external-link {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-left: 4px;
+      position: relative;
+      top: 1px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #005593;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    
+    footer p {
+      font-size: 0.875rem;
+    }
+    
+    /* Responsive */
+    @media (min-width: 768px) {
+      header .container h1 {
+        font-size: 1.875rem;
+      }
+    }
+    
+    /* Chevron icons */
+    .chevron {
+      border: solid #005593;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transition: transform 0.2s;
+    }
+    
+    .chevron-down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    
+    .chevron-up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <!-- タイトルを変数化 -->
+      <h1>AI & Data Science Pulse: [START_DATE] - [END_DATE]</h1>
+      <p>Tracking the latest innovations and breakthroughs across the AI landscape</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Section 1: GitHub Trending -->
+      <section class="section">
+        <div class="section-header" onclick="toggleSection('github')">
+          <h2>1. GitHub Trending</h2>
+          <span class="chevron chevron-up" id="github-chevron"></span>
+        </div>
+        <div class="section-content" id="github-content">
+          <ul id="github-items">
+            <!-- GitHub項目テンプレート - 必要な数だけコピーして使用 -->
+            <!-- 項目開始 -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="[REPO_URL]">
+                    [REPO_NAME]
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>[REPO_DESCRIPTION]</p>
+            </li>
+            <!-- 項目終了 -->
+            
+            <!-- サンプル項目（実際に使用する際は削除またはコメントアウト） -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="https://github.com/example/sample-repo">
+                    sample-repo
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>サンプルリポジトリの説明文がここに入ります。このリポジトリがどのような機能を持ち、なぜ注目されているのかについての簡潔な説明です。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 2: Paper (arXiv) -->
+      <section class="section">
+        <div class="section-header" onclick="toggleSection('papers')">
+          <h2>2. Paper (arXiv)</h2>
+          <span class="chevron chevron-up" id="papers-chevron"></span>
+        </div>
+        <div class="section-content" id="papers-content">
+          <ul id="paper-items">
+            <!-- 論文テンプレート - 必要な数だけコピーして使用 -->
+            <!-- 項目開始 -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="[PAPER_URL]">
+                    [PAPER_TITLE]
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>[PAPER_DESCRIPTION]</p>
+            </li>
+            <!-- 項目終了 -->
+            
+            <!-- サンプル項目（実際に使用する際は削除またはコメントアウト） -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="https://arxiv.org/abs/xxxx.xxxxx">
+                    サンプル論文タイトル: AIにおける新しいアプローチ
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>サンプル論文の内容説明がここに入ります。この論文がどのような研究成果を発表し、どのような意義があるのかについての簡潔な説明です。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3: Industry Spotlight -->
+      <section class="section">
+        <div class="section-header" onclick="toggleSection('companies')">
+          <h2>3. Industry Spotlight</h2>
+          <span class="chevron chevron-up" id="companies-chevron"></span>
+        </div>
+        <div class="section-content" id="companies-content">
+          <ul id="company-items">
+            <!-- 企業ニューステンプレート - 必要な数だけコピーして使用 -->
+            <!-- 項目開始 -->
+            <li class="item">
+              <div class="item-title">
+                <strong>[COMPANY_NAME]:</strong>
+              </div>
+              <p>[COMPANY_NEWS]</p>
+            </li>
+            <!-- 項目終了 -->
+            
+            <!-- サンプル項目（実際に使用する際は削除またはコメントアウト） -->
+            <li class="item">
+              <div class="item-title">
+                <strong>サンプル企業:</strong>
+              </div>
+              <p>サンプル企業のニュース内容がここに入ります。この企業が最近発表した製品やサービス、技術開発、業界動向などについての簡潔な説明です。必要に応じて<strong>重要なポイント</strong>を強調することができます。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 4: Blog (Zenn/Qiita/note) -->
+      <section class="section">
+        <div class="section-header" onclick="toggleSection('articles')">
+          <h2>4. Blog (Zenn/Qiita/note)</h2>
+          <span class="chevron chevron-up" id="articles-chevron"></span>
+        </div>
+        <div class="section-content" id="articles-content">
+          <ul id="blog-items">
+            <!-- ブログ記事テンプレート - 必要な数だけコピーして使用 -->
+            <!-- 項目開始 -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="[ARTICLE_URL]">
+                    [ARTICLE_TITLE]
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>[ARTICLE_DESCRIPTION]</p>
+            </li>
+            <!-- 項目終了 -->
+            
+            <!-- サンプル項目（実際に使用する際は削除またはコメントアウト） -->
+            <li class="item">
+              <div class="item-title">
+                <strong>
+                  <a href="https://example.com/blog-post">
+                    サンプルブログ記事のタイトル
+                    <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </strong>
+              </div>
+              <p>サンプルブログ記事の内容説明がここに入ります。この記事がどのようなトピックを扱い、どのような知見や情報を提供しているかについての簡潔な説明です。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- フッターの日付を変数化 -->
+      <p>© [YEAR] AI & Data Science Pulse | Last Updated: [UPDATE_DATE]</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for toggling sections -->
+  <script>
+    // Initialize all sections as expanded
+    const sections = ['github', 'papers', 'companies', 'articles'];
+    const sectionStates = {
+      'github': true,
+      'papers': true,
+      'companies': true,
+      'articles': true
+    };
+
+    // Function to toggle section visibility
+    function toggleSection(sectionId) {
+      const content = document.getElementById(`${sectionId}-content`);
+      const chevron = document.getElementById(`${sectionId}-chevron`);
+      
+      sectionStates[sectionId] = !sectionStates[sectionId];
+      
+      if (sectionStates[sectionId]) {
+        content.style.display = 'block';
+        chevron.className = 'chevron chevron-up';
+      } else {
+        content.style.display = 'none';
+        chevron.className = 'chevron chevron-down';
+      }
+    }
+
+    // 以下は実際に使用する際に、動的にコンテンツを生成するためのサンプルコード
+    /*
+    // 日付を設定する関数
+    function setDates() {
+      // 日付変数
+      const startDate = "March 24, 2025";
+      const endDate = "March 25, 2025";
+      const updateDate = "March 25, 2025";
+      const year = "2025";
+      
+      // タイトルとフッターの日付を設定
+      document.title = document.title.replace("[START_DATE] - [END_DATE]", startDate + " - " + endDate);
+      document.querySelector("header h1").innerHTML = document.querySelector("header h1").innerHTML.replace("[START_DATE] - [END_DATE]", startDate + " - " + endDate);
+      document.querySelector("footer p").innerHTML = document.querySelector("footer p").innerHTML.replace("[YEAR]", year).replace("[UPDATE_DATE]", updateDate);
+    }
+    
+    // 項目を動的に追加する関数の例
+    function addGitHubItem(repoUrl, repoName, repoDescription) {
+      const itemTemplate = `
+        <li class="item">
+          <div class="item-title">
+            <strong>
+              <a href="${repoUrl}">
+                ${repoName}
+                <svg class="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </strong>
+          </div>
+          <p>${repoDescription}</p>
+        </li>
+      `;
+      
+      document.getElementById("github-items").innerHTML += itemTemplate;
+    }
+    
+    // ページ読み込み時に実行
+    window.onload = function() {
+      setDates();
+      
+      // サンプルデータを削除
+      document.getElementById("github-items").innerHTML = "";
+      document.getElementById("blog-items").innerHTML = "";
+      document.getElementById("paper-items").innerHTML = "";
+      document.getElementById("company-items").innerHTML = "";
+      
+      // 動的にデータを追加する例
+      addGitHubItem("https://github.com/example/repo1", "repo1", "リポジトリ1の説明");
+      addGitHubItem("https://github.com/example/repo2", "repo2", "リポジトリ2の説明");
+      // 他のセクションも同様に実装可能
+    };
+    */
+  </script>
+</body>
+</html>

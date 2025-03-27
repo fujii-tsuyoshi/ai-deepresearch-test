@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- タイトルを変数化 -->
+    <title>AI & Data Science Pulse: March 25, 2025 - March 26, 2025</title>
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        min-height: 100vh;
+      }
+
+      a {
+        color: #005593;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      /* Layout */
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      /* Header */
+      header {
+        background-color: #005593;
+        color: white;
+        padding: 2rem 1rem;
+      }
+
+      header .container h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      header .container p {
+        color: #cce5ff;
+        letter-spacing: 0.3px;
+      }
+
+      /* Main content */
+      main {
+        padding: 2rem 1rem;
+      }
+
+      /* Sections */
+      .section {
+        margin-bottom: 2.5rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .section-header {
+        background-color: rgba(0, 85, 147, 0.1);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .section-header h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #005593;
+        letter-spacing: 0.3px;
+      }
+
+      .section-content {
+        padding: 1.5rem;
+      }
+
+      /* Items */
+      .item {
+        border-left: 4px solid #005593;
+        padding-left: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .item-title {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .item-title strong {
+        color: #005593;
+      }
+
+      .item p {
+        margin-top: 0.25rem;
+        color: #4b5563;
+      }
+
+      /* External link icon */
+      .external-link {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        position: relative;
+        top: 1px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #005593;
+        color: white;
+        padding: 1.5rem 1rem;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (min-width: 768px) {
+        header .container h1 {
+          font-size: 1.875rem;
+        }
+      }
+
+      /* Chevron icons */
+      .chevron {
+        border: solid #005593;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transition: transform 0.2s;
+      }
+
+      .chevron-down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      .chevron-up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- タイトルを変数化 -->
+        <h1>AI & Data Science Pulse: March 25, 2025 - March 26, 2025</h1>
+        <p>
+          Tracking the latest innovations and breakthroughs across the AI
+          landscape
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Section 1: GitHub Trending -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('github')">
+            <h2>1. GitHub Trending</h2>
+            <span class="chevron chevron-up" id="github-chevron"></span>
+          </div>
+          <div class="section-content" id="github-content">
+            <ul id="github-items">
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/NVIDIA/TensorRT-LLM">
+                      NVIDIA/TensorRT-LLM
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  NVIDIAが大規模言語モデル推論を効率化するためのTensorRTエンジンを組み込んだライブラリ。Python
+                  APIにより、LLMの高速推論やRAG (Retrieval-Augmented Generation)
+                  の実装が容易に行える点が注目されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">
+                      Shubhamsaboo/awesome-llm-apps
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  大規模言語モデル (LLM)
+                  を活用した優れたアプリケーションのキュレーション集。OpenAI、Anthropic
+                  など各種プロバイダーのモデルを用いた実装例が多数掲載され、開発者向けの参考情報として評価されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/joanrod/star-vector">
+                      joanrod/star-vector
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  視覚と言語を統合したアプローチで、テキスト入力からSVG画像のコードを自動生成するモデル。デザインやアイコン作成など、コードベースの画像生成に新たな可能性を示しています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/browser-use/browser-use">
+                      browser-use/browser-use
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  ウェブ操作をAIエージェントが行いやすくするためのフレームワーク。ブラウザ内の各要素を抽出し、AIが自動でインタラクションを実施できる仕組みを提供し、各種自動化シナリオに注目されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/agno-agi/agno">
+                      agno-agi/agno
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  マルチモーダルAIエージェントの構築を支援する軽量ライブラリ。複数の大規模言語モデルを統合し、記憶やツール連携機能を付与することで、高度なタスク実行を実現します。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/xtekky/gpt4free">
+                      xtekky/gpt4free
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  非公式ながらGPT-4などの強力な言語モデルを無料で利用するための仕組みをまとめたリポジトリ。各種代替APIやスクリプトを通して、最新のLLMを試せる点が注目されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://github.com/linyqh/NarratoAI">
+                      linyqh/NarratoAI
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  動画の解説や編集作業をAIが自動化するツール。ユーザーが指示した内容に基づいて動画の要約や解説音声を生成し、効率的なコンテンツ制作を支援する仕組みが評価されています。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 2: Paper (arXiv) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('papers')">
+            <h2>2. Paper (arXiv)</h2>
+            <span class="chevron chevron-up" id="papers-chevron"></span>
+          </div>
+          <div class="section-content" id="papers-content">
+            <ul id="paper-items">
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.18016">
+                      Retrieval Augmented Generation and Understanding in
+                      Vision: A Survey and New Outlook
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  画像生成や視覚理解分野における RAG (Retrieval-Augmented
+                  Generation)
+                  手法の最新動向をサーベイ。コンピュータビジョン領域において外部知識を効果的に統合するアプローチとその課題を包括的にレビューしています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.17932">
+                      STShield: Single-Token Sentinel for Real-Time Jailbreak
+                      Detection in Large Language Models
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  大規模言語モデルへの不正操作（Jailbreak）攻撃をリアルタイムで検知するための軽量な防御手法を提案。モデルの出力に特別なセンチネル・トークンを組み込み、攻撃兆候を早期発見する点が特徴です。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2502.03544">
+                      Gold-medalist Performance in Solving Olympiad Geometry
+                      with AlphaGeometry2
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Google DeepMind の AlphaGeometry2
+                  が、国際数学オリンピックの幾何問題において金メダリスト以上の解答率（84%）を達成した研究成果。従来の手法と比較して大幅に性能を向上させた手法について解説しています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://arxiv.org/abs/2503.18769">
+                      AlphaSpace: Enabling Robotic Actions through Semantic
+                      Tokenization and Symbolic Reasoning
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  ロボット制御のため、テキスト表現された空間情報を意味トークン化し、シンボリック推論を用いて行動計画を立案する新手法。視覚モジュールなしでロボットのタスク実行を可能にする点が注目されています。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 3: Industry Spotlight (企業ブログ・ニュース) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('companies')">
+            <h2>3. Industry Spotlight</h2>
+            <span class="chevron chevron-up" id="companies-chevron"></span>
+          </div>
+          <div class="section-content" id="companies-content">
+            <ul id="company-items">
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://openai.com/news/new-tools-for-building-agents"
+                    >
+                      OpenAI – GPT-4o画像生成機能の発表
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  OpenAI は、従来の画像生成モデルを超えた GPT-4o
+                  による画像生成機能を発表。テキストの指示に応じて、複雑なシーンや文字入り画像も高精度に生成可能となる新機能が公開され、開発者コミュニティで大きな話題となっています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://blog.google/technology/ai/google-nvidia-gtc-ai/"
+                    >
+                      Google – NVIDIA との協業強化 (GTC 2025)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  GTC 2025 に合わせ、Google は NVIDIA
+                  との協業を強化。新GPUアーキテクチャ採用のクラウドインスタンスや、DeepMind
+                  の最新 AI
+                  モデル「Gemini」シリーズの最適化により、幅広い分野での AI
+                  推論性能向上を実現しています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/"
+                    >
+                      Google DeepMind – Gemini 2.5 モデルの発表
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  DeepMind は、従来のモデルを大幅に上回る性能を誇る Gemini 2.5
+                  を発表。論理推論やコード生成能力の向上、マルチモーダル対応が強化され、今後のエージェント型
+                  AI の基盤として期待されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://www.anthropic.com">
+                      Anthropic – Claude 3.7 “Sonnet” のリリース
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Anthropic は、対話型 AI の新世代モデル Claude 3.7 “Sonnet”
+                  をリリース。従来のバージョンと比較して対話精度や安定性が向上しており、商用利用向けとしても高い評価を得ています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://about.fb.com/news/2025/03/europe-meet-your-newest-assistant-meta-ai/"
+                    >
+                      Meta – AIアシスタント「Meta AI」欧州展開開始
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Meta は、欧州41か国で AIチャットボット「Meta
+                  AI」の展開を開始。多言語対応と厳しい規制への適応を両立し、ユーザーの多様なニーズに応えるサービスとして注目されています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://www.nvidia.com/en-us/gtc/">
+                      NVIDIA – Blackwell GPU と AI 技術の新展開 (GTC 2025)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  NVIDIA は GTC 2025 で次世代 GPU「Blackwell」を正式発表。高性能
+                  GPU を活用した AI 推論・学習基盤の刷新と、エージェント型 AI
+                  の新たな開発フレームワークを公開し、業界全体に革新の波を広げています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://dify.ai/blog/dify-v1-1-0-filtering-knowledge-retrieval-with-customized-metadata"
+                    >
+                      Dify – Version 1.1.0 リリース (RAG強化)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  Dify は、リトリーバル強化型生成 (RAG)
+                  におけるドキュメント検索のフィルタリング機能を強化。カスタムメタデータにより、より正確な情報抽出と安全な回答生成を実現するアップデートを実施しました。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 4: Blog (Zenn/Qiita/note) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('articles')">
+            <h2>4. Blog (Zenn/Qiita/note)</h2>
+            <span class="chevron chevron-up" id="articles-chevron"></span>
+          </div>
+          <div class="section-content" id="articles-content">
+            <ul id="blog-items">
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a
+                      href="https://qiita.com/makishy/items/4dd3662a52851a2c5ddc"
+                    >
+                      Clineでアプリを作ろう！AIと協業する開発フローを体験
+                      (Qiita)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  AIエージェント「Cline」を用いて、アプリ開発の企画から実装までを体験する開発フローを解説。実際のコード例やセットアップ手順も掲載され、開発者に実践的な知見を提供しています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="https://note.com/maruking777/n/naa6053629536">
+                      最新の生成AIツール＆神ニュースまとめ (note)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  生成AI関連の最新ツールや話題のニュースをまとめた記事。新たに登場した画像生成モデルや、各社のAIアップデート情報が分かりやすく紹介されています。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 5: Social Media (Twitter) -->
+        <section class="section">
+          <div class="section-header" onclick="toggleSection('twitter')">
+            <h2>5. Social Media (Twitter)</h2>
+            <span class="chevron chevron-up" id="twitter-chevron"></span>
+          </div>
+          <div class="section-content" id="twitter-content">
+            <ul id="twitter-items">
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="#">
+                      DeepMindの幾何AIがIMO金メダリスト超え (X)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  X上で、Google DeepMind
+                  の幾何AIが国際数学オリンピックの幾何問題で金メダリスト以上の解答率を達成したとの投稿が大きな反響を呼びました。多数の「いいね」やリツイートが集まり、AIの論理推論能力に対する驚きの声が上がっています。
+                </p>
+              </li>
+              <li class="item">
+                <div class="item-title">
+                  <strong>
+                    <a href="#">
+                      GPT-4o画像生成デモがバズる (X)
+                      <svg
+                        class="external-link"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </strong>
+                </div>
+                <p>
+                  OpenAI の GPT-4o の画像生成機能を試す投稿が X
+                  で瞬く間に拡散。投稿内の作例と「文字付き画像も完璧に生成」というコメントが注目され、多数のリアクションを獲得しています。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 AI & Data Science Pulse | Last Updated: March 26, 2025</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for toggling sections -->
+    <script>
+      // 初期状態で全セクションを展開
+      const sections = ["github", "papers", "companies", "articles", "twitter"];
+      const sectionStates = {
+        github: true,
+        papers: true,
+        companies: true,
+        articles: true,
+        twitter: true,
+      };
+
+      // セクション表示/非表示を切り替える関数
+      function toggleSection(sectionId) {
+        const content = document.getElementById(`${sectionId}-content`);
+        const chevron = document.getElementById(`${sectionId}-chevron`);
+
+        sectionStates[sectionId] = !sectionStates[sectionId];
+
+        if (sectionStates[sectionId]) {
+          content.style.display = "block";
+          chevron.className = "chevron chevron-up";
+        } else {
+          content.style.display = "none";
+          chevron.className = "chevron chevron-down";
+        }
+      }
+    </script>
+  </body>
+</html>
